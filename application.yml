@@ -1,7 +1,6 @@
 spring:
   application:
-    name: github_overriding
-
+    name: customer_microservice_prod
 eureka:
   instance:
     instance-id: ${spring.application.name}:${random.value}
@@ -11,4 +10,4 @@ eureka:
       fetch-registry: true
       register-with-eureka: true
       service-url:
-         defaultZone: http://localhost:8761/eureka
+         defaultZone: http://localhost:8761/eureka    
